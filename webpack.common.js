@@ -19,8 +19,10 @@ module.exports = {
    resolve: {
     fallback: {
       "path": require.resolve("path-browserify"),
-      "stream": require.resolve("stream-browserify"),
+       "stream": require.resolve("stream-browserify"),
+      "process": require.resolve("process/browser"),
     },
+    extensions: ['.js', '.jsx', '.json'],
   },
 
   module: {
