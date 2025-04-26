@@ -35,7 +35,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^9.1.0",
     "cross-env": "^7.0.3",
-    "css-loader": "^6.5.1",
+    "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^4.0.0",
     "eslint": "^8.2.0",
     "eslint-plugin-cypress": "^2.13.3",
@@ -55,7 +55,7 @@
     "postcss-preset-env": "^7.7.2",
     "sass": "^1.87.0",
     "sass-loader": "^12.3.0",
-    "style-loader": "^3.3.1",
+    "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.2.5",
     "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1",
@@ -82,10 +82,13 @@
     "mark.js": "^8.11.1",
     "mermaid": "^11.6.0",
     "netlify-plugin-cypress": "^2.2.1",
+    "path-browserify": "^1.0.1",
     "plyr": "^3.7.8",
     "popper.js": "^1.16.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "slate-hyperscript": "^0.100.0",
+    "stream-browserify": "^3.0.0",
     "to-string-loader": "^1.2.0"
   }
 }
