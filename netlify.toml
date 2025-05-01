@@ -1,12 +1,13 @@
-[build]
-  command = "hugo"
-  publish = "public"
-
 [build.environment]
-  HUGO_VERSION = "0.124.1" # or whatever Hugo version you want
+  NETLIFY_USE_YARN = "true"
+  YARN_VERSION = "1.22.17"
+
+[build]
+  command = "yarn build"
+  publish = "dist"
 
 [context.deploy-preview]
-  command = "hugo --buildDrafts --buildFuture"
+  command = "yarn build:preview"
 
 [dev]
   framework = "hugo"
