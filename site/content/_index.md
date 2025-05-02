@@ -13,6 +13,11 @@ blurb:
     Whether you’re looking to automate operations, integrate contactless payments, manage secure elements, or build enterprise-ready backend systems —
 
     we deliver tailored solutions built for performance, compliance, and long-term support.
+---
+
+We’d love to get in touch with you and hear your ideas and
+questions. We strive to grow and improve constantly and your feedback
+is valuable for us.
 
 intro:
   heading: Our Core Services
