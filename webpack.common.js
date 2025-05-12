@@ -16,8 +16,21 @@ module.exports = {
     publicPath: ""
   },
 
+   resolve: {
+    fallback: {
+      "path": require.resolve("path-browserify"),
+       "stream": require.resolve("stream-browserify"),
+      "process": require.resolve("process/browser"),
+    },
+    extensions: ['.js', '.jsx', '.json'],
+  },
+
   module: {
     rules: [
+	  {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
         loader: "file-loader",
@@ -58,6 +71,10 @@ module.exports = {
   },
 
   plugins: [
+	new webpack.ProvidePlugin({
+      process: 'process/browser',
+      Buffer: ['buffer', 'Buffer'],
+    }),
     new AssetsPlugin({
       filename: "webpack.json",
       path: path.join(process.cwd(), "site/data"),
